@@ -1,5 +1,5 @@
 import React from "react"
-import { useParams, Link, Outlet, NavLink } from "react-router-dom"
+import { useParams, Link, NavLink, Outlet } from "react-router-dom"
 
 export default function HostVanDetail() {
     const { id } = useParams()
@@ -20,11 +20,9 @@ export default function HostVanDetail() {
     if (!currentVan) {
         return <h1>Loading...</h1>
     }
-
     return (
         <section>
-         
-         <Link
+            <Link
                 to=".."
                 relative="path"
                 className="back-button"
@@ -52,24 +50,20 @@ export default function HostVanDetail() {
                     >
                         Details
                     </NavLink>
-
                     <NavLink
                         to="pricing"
                         style={({ isActive }) => isActive ? activeStyles : null}
                     >
                         Pricing
                     </NavLink>
-
                     <NavLink
                         to="photos"
                         style={({ isActive }) => isActive ? activeStyles : null}
                     >
                         Photos
                     </NavLink>
-
                 </nav>
-
-                <Outlet context={{ currentVan }} />  
+                <Outlet context={{ currentVan }} />
             </div>
         </section>
     )
