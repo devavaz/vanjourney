@@ -1,5 +1,7 @@
 import React from "react"
 import { Link, NavLink } from "react-router-dom"
+import Image from "../assets/images/avatar-icon.png"
+import { IoIosLogOut } from "react-icons/io";
 
 export default function Header() {
     const activeStyles = {
@@ -36,11 +38,14 @@ export default function Header() {
                 </NavLink>
                 <Link to="login" className="login-link">
                     <img 
-                        src="../assets/images/avatar-icon.png" 
+                        src={Image}
                         className="login-icon"
                     />
                 </Link>
-                <button onClick={fakeLogOut}>X</button>
+                
+            <button className="logout-btn" onClick={fakeLogOut}>
+                     <IoIosLogOut style={{ fontSize: '1.5em' }} />
+            </button>
             </nav>
         </header>
     )
