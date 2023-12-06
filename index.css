@@ -31,20 +31,15 @@ body {
 }
 
 header {
-    height: 75px;
+    height: 74px;
     display: flex;
     align-items: center;
     padding-block: 10px;
-}
-
-
-
-header .site-logo {
-    color: black;
-    margin-right: auto;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 25px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #FFF7ED;
 }
 
 header a {
@@ -52,11 +47,21 @@ header a {
     color: #4D4D4D;
     font-weight: 600;
     padding: 5px 15px;
+    float: left;
+    display: block;
 }
 
 header a:hover {
     color: #161616;
     text-decoration: underline;
+}
+
+header .site-logo {
+    color: black;
+    margin-right: auto;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 25px;
 }
 
 .logout-btn {
@@ -138,6 +143,7 @@ footer {
     color: white;
     padding: 45px 23px;
     text-align: center;
+    margin-top: 60px;
 }
 
 .home-container h1 {
@@ -177,6 +183,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 60px;
 }
 
 
@@ -223,6 +230,7 @@ footer {
 /*** VAN PAGES ***/
 .van-list-container {
     padding-inline: 50px;
+    margin-top: 100px;
 }
 
 .van-list-container h2 {
@@ -521,11 +529,14 @@ i[class*='van-type-'] {
     color: white;
 }
 
+/********** LOGIN CONTAINER *********/
+
 .login-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-inline: 27px;
+    margin-top: 150px;
 }
 
 .login-form {
