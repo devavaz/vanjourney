@@ -2,6 +2,8 @@ import React from "react";
 
 export default function Footer() {
     return (
-        <footer>&#169; 2023 #VANLIFE | Website developed by <strong><a href="https://avazbek.com">Avazbek </a></strong> </footer>
+        <footer> 
+            <p>&#169;2023 #VanJourney | Website developed by </p>
+            <h4><a href="https://avazbek.me">Avazbek </a></h4> </footer>
     );
 }
