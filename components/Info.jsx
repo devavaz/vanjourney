@@ -7,7 +7,6 @@ import { BiSolidBellRing } from "react-icons/bi";
 
 
 
-
 export default function Info() {
   return (
     <div className='info-container'>
@@ -41,3 +40,5 @@ export default function Info() {
   )
 }
     
+
+

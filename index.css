@@ -839,3 +839,118 @@ img.graph {
     margin-right: 20px;
     color: #FF8C38;
 }
+
+
+/********** ACCORDION CONTAINER *********/
+
+
+.accordion-container {
+  min-height: 400px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;    
+  justify-content: space-around;
+}
+
+
+.accordion-item {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.accordion-title {
+  background-color: transparent;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.accordion-title.active {
+  background-color: #e0e0e0;
+}
+
+.accordion-icon {
+  font-size: 1.5em;
+  color: #FF8C38;
+}
+
+.accordion-content {
+  padding: 10px;
+  font-size: 0.9rem;
+  width: 500px;
+}
+
+/* Ensure that the accordion does not affect other elements */
+.accordion-title,
+.accordion-content {
+  box-sizing: border-box;
+}
+
+/* Prevent shrinking of adjacent elements when the arrow is down */
+.accordion-icon {
+  flex-shrink: 0;
+}
+
+.form-section {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section  h1 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-weight: 550;
+}
+
+.form-accordion input {
+  width: 400px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 100px;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.form-accordion input:hover {
+  border-color: #FF8C38;
+  transform: translate(1px, 1px);
+}
+#email {
+    height: 50px;
+}
+
+.form-btn {
+    background-color: #FF8C38;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-btn:hover {
+    transform: translate(1px, 1px);
+}
+
+
+.form-accordion input:focus {
+  outline: none;
+  border-color: #FF8C38; /* Change the color to your preference */
+}
+
+
+

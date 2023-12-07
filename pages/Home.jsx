@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import Info from "../components/Info"
+import Accordion from "../components/Accordion"
+
 
 export default function Home() {
     return (
@@ -10,7 +12,8 @@ export default function Home() {
             <p>Add adventure to your life by joining the #vanlife movement. Rent the perfect van to make your perfect road trip.</p>
             <Link to="vans">Find your van</Link>
         </div>
-        <Info />    
+        <Info />  
+        <Accordion />
         </>
     )
 };
